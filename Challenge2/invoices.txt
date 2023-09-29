@@ -1,0 +1,14 @@
+===========================
+BinarFud
+===========================
+
+Terima kasih sudah memesan
+di BinarFud
+
+Berikut adalah pesanan anda
+
+Nasi Goreng	2	24000
+Ayam Goreng	3	48000
+--------------------------+
+Total 		5	72000
+Terima kasih
