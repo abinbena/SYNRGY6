@@ -1,0 +1,5 @@
+Struk Pembayaran:
+=================
+Nasi Goreng | 1 x Rp10000.0 = Rp10000.0
+=================+
+Total Harga: Rp10000.0
