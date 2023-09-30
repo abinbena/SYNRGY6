@@ -7,21 +7,23 @@ import java.io.IOException;
 import org.example.models.Invoice;
 import java.util.ArrayList;
 public class InvoiceService {
-    public static ArrayList<Invoice> invoices = new ArrayList<>();
+    public static ArrayList<Invoice> list = new ArrayList<>();
     private static int sumQty,sumPrice;
     private static String total;
     public static void add(String name, int qty, int price){
-        invoices.add(new Invoice(name,qty, price * qty));
+        list.add(new Invoice(name,qty, price * qty));
     }
     public static void show(){
-        for(Invoice list: invoices){
-            list.display();
+        for(Invoice invoice: list){
+            invoice.display();
         }
     }
     public static void addTotal(){
-        for(Invoice list: invoices){
-            sumQty += list.getQty();
-            sumPrice += list.getPrice();
+        sumQty = 0;
+        sumPrice = 0;
+        for(Invoice invoice: list){
+            sumQty += invoice.getQty();
+            sumPrice += invoice.getPrice();
         }
         total = "Total \t\t" + sumQty + "\t" + sumPrice;
     }
@@ -41,7 +43,7 @@ public class InvoiceService {
                     "\n" +
                     "Berikut adalah pesanan anda\n");
             writer.newLine();
-            for (Invoice line : invoices) {
+            for (Invoice line : list) {
                 String lineString = line.toString();
                 writer.write(lineString);
                 writer.newLine();
@@ -50,14 +52,15 @@ public class InvoiceService {
             writer.newLine();
             writer.write(total);
             writer.newLine();
-            writer.write("Terima kasih");
+            writer.write("\n\n\n===========================\n" +
+                    "Simpan struk ini sebagai\n" +
+                    "bukti pembayaran\n" +
+                    "===========================");
 
             writer.close();
-            System.out.println("Data telah disimpan ke " + " invoices.txt");
+            System.out.println("Struk telah disimpan ke " + " invoices.txt");
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 }

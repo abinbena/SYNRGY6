@@ -7,8 +7,16 @@ di BinarFud
 
 Berikut adalah pesanan anda
 
-Nasi Goreng	2	24000
-Ayam Goreng	3	48000
+Ayam Goreng	2	32000
+Mie Goreng	1	10000
+Nasi Goreng	1	12000
+Es Jeruk	4	24000
 --------------------------+
-Total 		5	72000
-Terima kasih
+Total 		8	78000
+
+
+
+===========================
+Simpan struk ini sebagai
+bukti pembayaran
+===========================

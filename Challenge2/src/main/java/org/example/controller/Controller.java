@@ -11,52 +11,75 @@ import org.example.views.PaymentPage;
 import java.util.Scanner;
 
 public class Controller {
-    private static int status,quantity,mainOption,bayarOption;
+    private static int status,quantity,Option,bayarOption;
     private static Menu menuIndex;
     public static void home(){
         InvoiceService invoices = new InvoiceService();
         do{
             HomePage.show();
-            mainOption = Controller.getOption();
+            Option = Controller.getOption();
 
-            if(mainOption>=1 && mainOption<= MenuService.length()){
-                CheckPage.show(mainOption-1);
+            if(Option>=1 && Option<= MenuService.length()){
+                CheckPage.show(Option-1);
                 quantity = getOption();
-                menuIndex = MenuService.listMenu.get(mainOption - 1);
-                //menambahkan kedalam invoice
-                invoices.add(menuIndex.getName(),quantity,menuIndex.getPrice());
-                //menambahkan total ke dalam invoice
 
-            } else if (mainOption == 99) {
-                invoices.addTotal();
-                do{
+                if(quantity != 0){
+                    //menambahkan index menu yang dipilih kedalam invoice
+                    menuIndex = MenuService.listMenu.get(Option - 1);
+                    //menambahkan total ke dalam invoice
+                    invoices.add(menuIndex.getName(),quantity,menuIndex.getPrice());
+                }
+
+
+            } else if (Option == 99) {
+
+                if(invoices.list.isEmpty()) {
+                    ErrorPage.errorQuantity();
+                    errorHandle();
+                }
+
+                else {
+                    invoices.addTotal();
                     PaymentPage.show();
                     bayarOption = Controller.getOption();
-                    if(bayarOption == 1){
-                        invoices.cetak();
-                        bayarOption = 0;
-                        mainOption = 0;
-                    } else if (bayarOption == 2){
-                        bayarOption = 0;
-                    } else if (bayarOption == 0) {
-                        bayarOption = 0;
-                        mainOption = 0;
-                    }
-                }while(bayarOption!=0);
-            } else {
-                ErrorPage.show();
-                status = Controller.getOption();
-                if(status == 2){
-                    mainOption = 0;
-                }
-            }
-        }while (mainOption!=0);
-    }
 
+                    switch (bayarOption){
+                        case 1 -> {
+                            invoices.cetak();
+                            Option = 0;
+                        }
+                        case 2 -> bayarOption = 0;
+                        case 0 -> {
+                            bayarOption= 0;
+                            Option = 0;
+                        }
+                        default -> {
+                            ErrorPage.errorInput();
+                            errorHandle();
+                        }
+                    }
+                }
+
+            } else if (Option != 0) {
+                ErrorPage.errorInput();
+                errorHandle();
+            }
+        }while (Option!=0);
+    }
+    public static void errorHandle(){
+
+        status = Controller.getOption();
+        switch (status){
+            case 1 -> {
+            }
+            case 2 -> Option = 0;
+            default -> errorHandle();
+        }
+    }
     public static int getOption() {
         int option;
         Scanner input = new Scanner(System.in);
         return option = input.nextInt();
     }
-
 }
+

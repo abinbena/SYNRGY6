@@ -1,15 +1,13 @@
 package org.example.models;
 
 public class Invoice {
-    private String name;
-    private int price, qty;
+    private final String name;
+    private final int price;
+    private final int qty;
     public Invoice(String name, int qty, int price){
         this.name = name;
         this.qty = qty;
         this.price = price;
-    }
-    public String getName() {
-        return name;
     }
     public int getPrice() {
         return price;
