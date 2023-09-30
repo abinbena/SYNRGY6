@@ -1,0 +1,16 @@
+
+y
+java:S1192"WDefine a constant instead of duplicating this literal "=====================
+" 3 times.(Â¯¶„ıÿÿÿÿ8Æ¨“®1
+P
+java:S1118":Add a private constructor to hide the implicit public one.(§™òŸ
+E	java:S106"+Replace this use of System.out by a logger.(Â¯¶„ıÿÿÿÿ
+M
+java:S6126"2Replace this String concatenation with Text block.(Â¯¶„ıÿÿÿÿ
+@	java:S106	"+Replace this use of System.out by a logger.(ÛÙ™õ
+E	java:S106"+Replace this use of System.out by a logger.(­–´½øÿÿÿÿ
+L	java:S106"+Replace this use of System.out by a logger.(Â¯¶„ıÿÿÿÿ8Ë¨“®1
+T
+java:S6126"2Replace this String concatenation with Text block.(Â¯¶„ıÿÿÿÿ8Ë¨“®1
+G	java:S106"+Replace this use of System.out by a logger.(ÛÙ™õ8Ë¨“®1
+L	java:S106"+Replace this use of System.out by a logger.(­–´½øÿÿÿÿ8Ë¨“®1
