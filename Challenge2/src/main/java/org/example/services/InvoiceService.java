@@ -8,7 +8,6 @@ import org.example.models.Invoice;
 import java.util.ArrayList;
 public class InvoiceService {
     public static ArrayList<Invoice> list = new ArrayList<>();
-    private static int sumQty,sumPrice;
     private static String total;
     public static void add(String name, int qty, int price){
         list.add(new Invoice(name,qty, price * qty));
@@ -19,8 +18,8 @@ public class InvoiceService {
         }
     }
     public static void addTotal(){
-        sumQty = 0;
-        sumPrice = 0;
+        int sumQty = 0;
+        int sumPrice = 0;
         for(Invoice invoice: list){
             sumQty += invoice.getQty();
             sumPrice += invoice.getPrice();

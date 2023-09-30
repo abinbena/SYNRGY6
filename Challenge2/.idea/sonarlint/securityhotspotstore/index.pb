@@ -15,3 +15,9 @@ f
 6src/main/java/org/example/services/InvoiceService.java,7\f\7f119f18ca1d483073eccf24bb7c9ee7f27b5e28
 <
 invoices.txt,4\9\49225e9c317cf7e3a3d96c9d4cedd067bbb047c6
+Z
+*src/main/java/org/example/models/Menu.java,6\6\66faa258c8b734b1e5756874e24a223ebeb044bb
+c
+3src/main/java/org/example/services/MenuService.java,a\6\a617f3078404762b687b3ecab12f568cf762b6cf
+^
+.src/main/java/org/example/views/CheckPage.java,3\d\3d2397cadc604bb3fb8ce4c5c5be63c77059b1dd
