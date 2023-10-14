@@ -1,0 +1,10 @@
+
+\
+java:S1118":Add a private constructor to hide the implicit public one.(›ĞÅ¾ùÿÿÿÿ8Õ”Şé²1
+G	java:S106"+Replace this use of System.out by a logger.(©´ã8Ø”Şé²1
+O
+java:S6126"2Replace this String concatenation with Text block.(©´ã8×”Şé²1
+L	java:S106"+Replace this use of System.out by a logger.(Ì¨•Òùÿÿÿÿ8Ø”Şé²1
+T
+java:S6126"2Replace this String concatenation with Text block.(Ì¨•Òùÿÿÿÿ8Ø”Şé²1
+L	java:S106"+Replace this use of System.out by a logger.(­–´½øÿÿÿÿ8èÉ‘ë²1

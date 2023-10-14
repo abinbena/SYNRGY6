@@ -1,0 +1,31 @@
+
+P
+java:S1121<".Extract the assignment out of this expression.(ô¯¤¢ùÿÿÿÿ8Õ¶Åé²1
+b
+java:S1659"EDeclare "quantity" and all following declarations on a separate line.(²Ëõ›8İ¶Åé²1
+w
+java:S1450"ZRemove the "bayarOption" field and declare it as a local variable in the relevant methods.(²Ëõ›8İ¶Åé²1
+v
+java:S1450"YRemove the "mainOption" field and declare it as a local variable in the relevant methods.(²Ëõ›8Ş¶Åé²1
+t
+java:S1450"XRemove the "menuIndex" field and declare it as a local variable in the relevant methods.(˜àŒ8…²Îí²1
+t
+java:S1450"WRemove the "quantity" field and declare it as a local variable in the relevant methods.(²Ëõ›8Ş¶Åé²1
+r
+java:S1450"URemove the "status" field and declare it as a local variable in the relevant methods.(²Ëõ›8Ş¶Åé²1
+W
+java:S1118":Add a private constructor to hide the implicit public one.(Øó´Ÿ8à¶Åé²1
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Ğ¤„Ñ8á¶Åé²1
+P
+java:S2440".Remove this instantiation of "InvoiceService".(­‰Æ“úÿÿÿÿ8†Àêé²1
+W
+java:S2209"5Change this instance-reference to a static reference.(©ĞÔµøÿÿÿÿ8—Àêé²1
+W
+java:S2209 "5Change this instance-reference to a static reference.(ËÜÑ¼ıÿÿÿÿ8˜Àêé²1
+W
+java:S2209%"5Change this instance-reference to a static reference.(»‘·üÿÿÿÿ8‹²Îí²1
+\
+java:S1854<":Remove this useless assignment to local variable "option".(ô¯¤¢ùÿÿÿÿ8æ¶Åé²1
+H
+java:S1481:"+Remove this unused "option" local variable.(®†Ô«8ç¶Åé²1

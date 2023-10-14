@@ -17,16 +17,6 @@ W
 java:S1118":Add a private constructor to hide the implicit public one.(Øó´Ÿ8†§‹®1
 t
 java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ÙŠ°Øÿÿÿÿÿ8‡§‹®1
-P
-java:S2440".Remove this instantiation of "InvoiceService".(­‰Æ“úÿÿÿÿ8‡§‹®1
-W
-java:S2209"5Change this instance-reference to a static reference.(©ĞÔµøÿÿÿÿ8ˆ§‹®1
-W
-java:S2209$"5Change this instance-reference to a static reference.(€ß§×øÿÿÿÿ8‰§‹®1
-W
-java:S2209*"5Change this instance-reference to a static reference.(ËÜÑ¼ıÿÿÿÿ8‰§‹®1
-W
-java:S22090"5Change this instance-reference to a static reference.(»‘·üÿÿÿÿ8‰§‹®1
 J	java:S108I")Either remove or fill this block of code.(ò÷Ñäÿÿÿÿÿ8–Ü¤®1
 \
 java:S1854R":Remove this useless assignment to local variable "option".(ô¯¤¢ùÿÿÿÿ8—Ü¤®1

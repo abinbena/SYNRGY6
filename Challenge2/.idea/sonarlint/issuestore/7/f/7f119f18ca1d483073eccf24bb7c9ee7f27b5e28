@@ -8,11 +8,6 @@ java:S1104
 G
 java:S1444
 "*Make this "public static list" field final(§Êºà8³º•®1
-i
-java:S2095""LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(‰Õí„8Âº•®1
-:
-java:S2386
-"Make this member "protected".(§Êºà8Åº•®1
 W
 java:S1118	":Add a private constructor to hide the implicit public one.(Âä°8Æº•®1
 L	java:S106"+Replace this use of System.out by a logger.(Ó›¬œøÿÿÿÿ8Ëº•®1
