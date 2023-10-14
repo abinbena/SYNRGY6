@@ -13,9 +13,12 @@ public class UserService {
         ResultSet maxIdResultSet = selectStatement.executeQuery();
 
         int maxOrderID = 0;
+
+
         if (maxIdResultSet.next()) {
             maxOrderID = maxIdResultSet.getInt(1);
         }
+
         maxIdResultSet.close();
         selectStatement.close();
 
@@ -27,11 +30,15 @@ public class UserService {
         insertStatement.executeUpdate();
 
         ResultSet resultSet = insertStatement.getGeneratedKeys();
-        int id = resultSet.getInt(1);
+        int id = 0;
+        if (resultSet.next()) {
+            id = resultSet.getInt(1);
+        }
         resultSet.close();
         insertStatement.close();
         connection.close();
 
         return id;
     }
+
 }

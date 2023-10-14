@@ -1,6 +1,5 @@
 package org.example;
 
-import org.example.controller.ResultTest;
 import org.example.service.AppService;
 
 import java.sql.SQLException;

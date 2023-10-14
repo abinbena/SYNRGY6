@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.service.UserService;
 import org.example.util.ConnectionUtil;
 import org.junit.jupiter.api.Test;
 
@@ -127,5 +128,8 @@ public class StatementTest {
         insertStatement.close();
         connection.close();
     }
-
+    @Test
+    void testUserID() throws SQLException{
+        int tes = UserService.AutoIncrementID();
+    }
 }

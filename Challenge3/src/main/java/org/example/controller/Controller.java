@@ -16,9 +16,11 @@ import java.util.Scanner;
 public class Controller {
     private static int status,quantity,mainOption,bayarOption;
     private static Menu menuIndex;
+    private static int UserID;
     public static void home() throws SQLException {
         InvoiceService invoices = new InvoiceService();
-
+        //inisialisasi UserID
+        UserID = UserService.AutoIncrementID();
         do{
 
             HomePage.show();
@@ -29,7 +31,7 @@ public class Controller {
                 quantity = getOption();
                 menuIndex = MenuService.listMenu.get(mainOption - 1);
                 //menambahkan kedalam invoice
-                invoices.add(1,menuIndex.getName(),quantity,menuIndex.getPrice());
+                invoices.add(UserID ,menuIndex.getName(),quantity,menuIndex.getPrice());
                 //menambahkan total ke dalam invoice
 
             } else if (mainOption == 99) {

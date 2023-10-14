@@ -13,15 +13,12 @@ public class InvoiceService {
     public static ArrayList<Invoice> invoices = new ArrayList<>();
     private static int sumQty,sumPrice;
     private static String total;
-//    public static void add(String name, int qty, int price){
-//        invoices.add(new Invoice(name,qty, price * qty));
-//    }
     public static void add(int orderID, String name, int qty, int price) throws SQLException {
         Connection connection = ConnectionUtil.getDataSource().getConnection();
         String sql = "INSERT INTO orderitems(OrderID,Name, Qty, Price) VALUES (?,?,?,?)";
         PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
 
-        preparedStatement.setInt(1, 1);
+        preparedStatement.setInt(1, orderID);
         preparedStatement.setString(2, name);
         preparedStatement.setInt(3, qty);
         preparedStatement.setInt(4, qty*price);
