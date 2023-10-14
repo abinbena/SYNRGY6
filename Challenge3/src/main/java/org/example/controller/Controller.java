@@ -1,7 +1,6 @@
 package org.example.controller;
 
 import org.example.model.Menu;
-import org.example.service.AppService;
 import org.example.service.MenuService;
 import org.example.service.UserService;
 import org.example.views.CheckPage;
@@ -35,12 +34,11 @@ public class Controller {
                 //menambahkan total ke dalam invoice
 
             } else if (mainOption == 99) {
-                invoices.addTotal();
                 do{
-                    PaymentPage.show();
+                    PaymentPage.show(UserID);
                     bayarOption = Controller.getOption();
                     if(bayarOption == 1){
-                        invoices.cetak();
+                        UserService.cetak(UserID);
                         bayarOption = 0;
                         mainOption = 0;
                     } else if (bayarOption == 2){

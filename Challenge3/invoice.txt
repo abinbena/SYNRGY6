@@ -1,0 +1,4 @@
+Nasi Goreng | TotalQty: 2 | TotalPrice: 24000
+Mie Goreng | TotalQty: 4 | TotalPrice: 40000
+Es Jeruk | TotalQty: 4 | TotalPrice: 24000
+Total Qty: 10 | Total Price: 88000
