@@ -1,18 +1,23 @@
 
+…
+java:S1319"hThe type of "listMenu" should be an interface such as "List" rather than the implementation "ArrayList".(÷®ù´8ÅÜØí²1
 q
-java:S1104"TMake listMenu a static final constant or non-public and provide accessors if needed.(÷®ù´8Š³Íí²1
+java:S1104"TMake listMenu a static final constant or non-public and provide accessors if needed.(÷®ù´8ÆÜØí²1
 K
-java:S1444".Make this "public static listMenu" field final(÷®ù´8‹³Íí²1
+java:S1444".Make this "public static listMenu" field final(÷®ù´8ÆÜØí²1
+:
+java:S2386"Make this member "protected".(÷®ù´8ÓÜØí²1
 G
-java:S3010"%Remove this assignment of "listMenu".(ÏóÙœúÿÿÿÿ8³Íí²1
-L	java:S106 "+Replace this use of System.out by a logger.(Ü®ò›øÿÿÿÿ8’³Íí²1
+java:S3010"%Remove this assignment of "listMenu".(ÏóÙœúÿÿÿÿ8ØÜØí²1
+L	java:S106"+Replace this use of System.out by a logger.(Ü®ò›øÿÿÿÿ8ÜÜØí²1
 F
-java:S1068")Remove this unused "menu1" private field.(·ÑÖ¤8“³Íí²1
+java:S1068	")Remove this unused "menu1" private field.(·ÑÖ¤8İÜØí²1
 F
-java:S1068")Remove this unused "menu2" private field.(—‰½±8“³Íí²1
+java:S1068
+")Remove this unused "menu2" private field.(—‰½±8İÜØí²1
 F
-java:S1068")Remove this unused "menu3" private field.(µØÎæ8“³Íí²1
+java:S1068")Remove this unused "menu3" private field.(µØÎæ8İÜØí²1
 F
-java:S1068")Remove this unused "menu4" private field.(Çà—8“³Íí²1
+java:S1068")Remove this unused "menu4" private field.(Çà—8İÜØí²1
 F
-java:S1068")Remove this unused "menu5" private field.(æŒ¶ü8“³Íí²1
+java:S1068")Remove this unused "menu5" private field.(æŒ¶ü8İÜØí²1

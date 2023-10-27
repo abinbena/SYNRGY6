@@ -1,0 +1,14 @@
+
+q
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¼Ôè¼ûÿÿÿÿ8âæäî²1
+q
+java:S20952"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½¨“Ğúÿÿÿÿ8Ñ¸¤ğ²1
+n
+java:S2095U"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(…¿Å“şÿÿÿÿ8Ñ¸¤ğ²1
+q
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¨÷¢üÿÿÿÿ8ãæäî²1
+W
+java:S1118
+":Add a private constructor to hide the implicit public one.(ÔÄëª8‡Àî²1
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñóÆ÷ùÿÿÿÿ8åæäî²1
+G	java:S106X"+Replace this use of System.out by a logger.(¯ŒÌ8Ù¸¤ğ²1
